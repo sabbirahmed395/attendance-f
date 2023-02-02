@@ -192,28 +192,28 @@ onMounted(() => {
     }
   }
   dom("body").removeClass("error-page").removeClass("login").addClass("main");
-  // formattedMenu.value = $h.toRaw(sideMenu.value);
-  let rawMenu = $h.toRaw(sideMenu.value);
-  let filteredRawMenu = [];
-  rawMenu.forEach((menu) => {
-    if (menu.scopes.includes(user.user_type)) {
-      let filteredSubMenu = [];
-      // console.log(menu.subMenu);
-      if (menu.subMenu && menu.subMenu.length > 0) {
-        menu.subMenu.forEach((submenu) => {
-          if (submenu.scopes.includes(user.user_type)) {
-            filteredSubMenu.push(submenu);
-          }
-        });
-      }
+  formattedMenu.value = $h.toRaw(sideMenu.value);
+  // let rawMenu = $h.toRaw(sideMenu.value);
+  // let filteredRawMenu = [];
+  // rawMenu.forEach((menu) => {
+  //   if (menu.scopes.includes(user.user_type)) {
+  //     let filteredSubMenu = [];
+  //     // console.log(menu.subMenu);
+  //     if (menu.subMenu && menu.subMenu.length > 0) {
+  //       menu.subMenu.forEach((submenu) => {
+  //         if (submenu.scopes.includes(user.user_type)) {
+  //           filteredSubMenu.push(submenu);
+  //         }
+  //       });
+  //     }
 
-      if (filteredSubMenu.length > 0) {
-        menu.subMenu = filteredSubMenu;
-      }
-      filteredRawMenu.push(menu);
-    }
-  });
-  // console.log(filteredRawMenu);
-  formattedMenu.value = filteredRawMenu;
+  //     if (filteredSubMenu.length > 0) {
+  //       menu.subMenu = filteredSubMenu;
+  //     }
+  //     filteredRawMenu.push(menu);
+  //   }
+  // });
+  // // console.log(filteredRawMenu);
+  // formattedMenu.value = filteredRawMenu;
 });
 </script>

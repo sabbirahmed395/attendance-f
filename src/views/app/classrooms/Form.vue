@@ -192,6 +192,7 @@ const actionFetchBatchesNCourses = async () => {
 
 const save = async () => {
   let formData = {};
+  formData.program_id = program_id.value;
   formData.course_id = course_id.value;
   formData.batch_id = batch_id.value;
   formData.status = status.value;
