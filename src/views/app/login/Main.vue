@@ -6,11 +6,7 @@
         <!-- BEGIN: Login Info -->
         <div class="hidden xl:flex flex-col min-h-screen">
           <a href="" class="-intro-x flex items-center pt-5">
-            <img
-              alt="IIT JU"
-              class="w-6"
-              src="@/assets/images/ju.png"
-            />
+            <img alt="IIT JU" class="w-6" src="@/assets/images/ju.png" />
             <span class="text-white text-lg ml-3"> IIT Jahangirnagar University </span>
           </a>
           <div class="my-auto">
@@ -95,6 +91,7 @@ import Axios from "axios";
 // import DarkModeSwitcher from "@/components/dark-mode-switcher/Main.vue";
 import dom from "@left4code/tw-starter/dist/js/dom";
 import Toastify from "toastify-js";
+import router from "@/router";
 
 onMounted(() => {
   redirectToDashboard();
