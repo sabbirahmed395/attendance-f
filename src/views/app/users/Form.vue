@@ -8,7 +8,7 @@
         <!-- BEGIN: Form Layout -->
         <div class="intro-y box p-5">
           <div>
-            <label for="first_name" class="form-label">First Name</label>
+            <label for="first_name" class="form-label">First Name <small>*</small></label>
             <input
               id="first_name"
               v-model="first_name"
@@ -21,7 +21,7 @@
             </div>
           </div>
           <div class="mt-3">
-            <label for="last_name" class="form-label">Last Name</label>
+            <label for="last_name" class="form-label">Last Name <small>*</small></label>
             <input
               id="last_name"
               v-model="last_name"
@@ -34,7 +34,7 @@
             </div>
           </div>
           <div class="mt-3">
-            <label for="email" class="form-label">Email</label>
+            <label for="email" class="form-label">Email <small>*</small></label>
             <input
               id="email"
               v-model="email"
@@ -47,7 +47,7 @@
             </div>
           </div>
           <div class="mt-3">
-            <label for="password" class="form-label">Password</label>
+            <label for="password" class="form-label">Password <small>*</small></label>
             <input
               id="password"
               v-model="password"
@@ -89,7 +89,7 @@
             </div>
           </div>
           <div class="mt-3">
-            <label for="user_type" class="form-label">User Type</label>
+            <label for="user_type" class="form-label">User Type <small>*</small></label>
             <select
               id="user_type"
               v-model="user_type"

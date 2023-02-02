@@ -8,7 +8,7 @@
         <!-- BEGIN: Form Layout -->
         <div class="intro-y box p-5">
           <div>
-            <label for="program_id" class="form-label">Programs</label>
+            <label for="program_id" class="form-label">Programs <small>*</small></label>
             <select
               id="program_id"
               v-model="program_id"
@@ -26,7 +26,7 @@
             </div>
           </div>
           <div class="mt-3">
-            <label for="batch_id" class="form-label">Batches</label>
+            <label for="batch_id" class="form-label">Batches <small>*</small></label>
             <select
               id="batch_id"
               v-model="batch_id"
@@ -43,7 +43,7 @@
             </div>
           </div>
           <div class="mt-3">
-            <label for="course_id" class="form-label">Courses</label>
+            <label for="course_id" class="form-label">Courses <small>*</small></label>
             <select
               id="course_id"
               v-model="course_id"
@@ -61,7 +61,7 @@
           </div>
 
           <div class="mt-3">
-            <label for="status" class="form-label">Status</label>
+            <label for="status" class="form-label">Status <small>*</small></label>
             <select
               id="status"
               v-model="status"

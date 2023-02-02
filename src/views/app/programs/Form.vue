@@ -8,7 +8,7 @@
         <!-- BEGIN: Form Layout -->
         <div class="intro-y box p-5">
           <div class="mt-3">
-            <label for="name" class="form-label">Program Name</label>
+            <label for="name" class="form-label">Program Name <small>*</small></label>
             <input
               id="name"
               v-model="name"

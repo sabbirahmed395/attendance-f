@@ -89,10 +89,7 @@
               >
                 <div class="box px-5 py-3 mb-3 flex items-center zoom-in">
                   <div class="w-10 h-10 flex-none image-fit rounded-full overflow-hidden">
-                    <img
-                      alt="IIT JU"
-                      src="@/assets/images/logo.svg"
-                    />
+                    <img alt="IIT JU" src="@/assets/images/logo.svg" />
                   </div>
                   <div class="ml-4 mr-auto">
                     <div class="font-medium">
@@ -109,6 +106,7 @@
               </div>
               <a
                 href=""
+                v-if="false"
                 class="intro-x w-full block text-center rounded-md py-3 border border-dotted border-slate-400 dark:border-darkmode-300 text-slate-500"
                 >View More</a
               >

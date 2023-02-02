@@ -8,7 +8,7 @@
         <!-- BEGIN: Form Layout -->
         <div class="intro-y box p-5">
           <div>
-            <label for="program_id" class="form-label">Programs</label>
+            <label for="program_id" class="form-label">Programs <small>*</small></label>
             <select
               id="program_id"
               v-model="program_id"
@@ -25,7 +25,7 @@
             </div>
           </div>
           <div class="mt-3">
-            <label for="batch_no" class="form-label">Batch No.</label>
+            <label for="batch_no" class="form-label">Batch No. <small>*</small></label>
             <input
               id="batch_no"
               v-model="batch_no"

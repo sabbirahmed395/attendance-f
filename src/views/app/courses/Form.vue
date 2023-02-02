@@ -8,7 +8,7 @@
         <!-- BEGIN: Form Layout -->
         <div class="intro-y box p-5">
           <div>
-            <label for="program_id" class="form-label">Programs</label>
+            <label for="program_id" class="form-label">Programs <small>*</small></label>
             <select
               id="program_id"
               v-model="program_id"
@@ -25,7 +25,9 @@
             </div>
           </div>
           <div class="mt-3">
-            <label for="course_code" class="form-label">Course Code</label>
+            <label for="course_code" class="form-label"
+              >Course Code <small>*</small></label
+            >
             <input
               id="course_code"
               v-model="course_code"
@@ -38,7 +40,9 @@
             </div>
           </div>
           <div class="mt-3">
-            <label for="course_title" class="form-label">Course Title</label>
+            <label for="course_title" class="form-label"
+              >Course Title <small>*</small></label
+            >
             <input
               id="course_title"
               v-model="course_title"
@@ -51,7 +55,9 @@
             </div>
           </div>
           <div class="mt-3">
-            <label for="credit_hour" class="form-label">Credit Hour</label>
+            <label for="credit_hour" class="form-label"
+              >Credit Hour <small>*</small></label
+            >
             <input
               id="credit_hour"
               v-model="credit_hours"

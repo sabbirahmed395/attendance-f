@@ -8,7 +8,7 @@
         <!-- BEGIN: Form Layout -->
         <div class="intro-y box p-5">
           <div>
-            <label for="teacher_id" class="form-label">Teacher ID</label>
+            <label for="teacher_id" class="form-label">Teacher ID <small>*</small></label>
             <input
               id="teacher_id"
               v-model="teacher_id"
@@ -28,8 +28,8 @@
                 {{ course.course_code }} {{ course.course_title }}
               </option>
             </TomSelect>
-            <div class="text-danger mt-2" v-if="errors && errors.designation">
-              {{ errors.designation[0] }}
+            <div class="text-danger mt-2" v-if="errors && errors.course_ids">
+              {{ errors.course_ids[0] }}
             </div>
           </div>
           <div class="mt-3">
@@ -46,7 +46,7 @@
             </div>
           </div>
           <div class="mt-3">
-            <label for="first_name" class="form-label">First Name</label>
+            <label for="first_name" class="form-label">First Name <small>*</small></label>
             <input
               id="first_name"
               v-model="first_name"
@@ -59,7 +59,9 @@
             </div>
           </div>
           <div class="mt-3">
-            <label for="middle_name" class="form-label">Middle Name</label>
+            <label for="middle_name" class="form-label"
+              >Middle Name <small>*</small></label
+            >
             <input
               id="middle_name"
               v-model="middle_name"
@@ -72,7 +74,7 @@
             </div>
           </div>
           <div class="mt-3">
-            <label for="last_name" class="form-label">Last Name</label>
+            <label for="last_name" class="form-label">Last Name <small>*</small></label>
             <input
               id="last_name"
               v-model="last_name"
@@ -85,7 +87,9 @@
             </div>
           </div>
           <div class="mt-3">
-            <label for="crud-form-2" class="form-label">Designation</label>
+            <label for="crud-form-2" class="form-label"
+              >Designation <small>*</small></label
+            >
             <TomSelect id="crud-form-2" v-model="designation" class="w-full">
               <option selected disabled>-- Select a designation --</option>
               <option value="professor">Professor</option>
